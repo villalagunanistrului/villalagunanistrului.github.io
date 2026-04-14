@@ -616,11 +616,10 @@
   }
 }
 </style>
-  <section class="contacts">
+<section class="contacts">
   <h2 class="contacts-title">Связаться с нами и забронировать</h2>
 
   <div class="contacts-grid">
-
     <div class="contact-item">
       <h3>Время аренды</h3>
       <p>ежедневно<br>с 10:00 до 22:00</p>
@@ -628,11 +627,8 @@
 
     <div class="contact-item">
       <h3>Связь</h3>
-      <p>
-        +373 79707595<br>
-        +373 79176176
-      </p>
-      <a 
+      <p>+373 79707595<br>+373 79176176</p>
+      <a
         href="https://wa.me/37379707595?text=Здравствуйте,%20хочу%20забронировать"
         target="_blank"
         class="contact-button whatsapp"
@@ -643,24 +639,23 @@
 
     <div class="contact-item">
       <h3>Локация</h3>
-<p>Вадул-луй-Водэ, у Днестра</p>
-<p class="location-note">Точная локация указана на карте</p>
-<a 
-  href="https://maps.app.goo.gl/kBX97hZanu1ghkSg7"
-  target="_blank"
-  class="contact-button map-light"
->
-  Построить маршрут
-</a>
+      <p>Вадул-луй-Водэ, у Днестра</p>
+      <p class="location-note">Точная локация указана на карте</p>
+      <a
+        href="https://maps.app.goo.gl/kBX97hZanu1ghkSg7"
+        target="_blank"
+        class="contact-button map-light"
+      >
+        Построить маршрут
+      </a>
     </div>
-
   </div>
 
-<div class="socials">
-  <a href="https://www.instagram.com/villalagunanistrului/" target="_blank" class="inst">Instagram</a>
-  <a href="https://www.facebook.com/villalagunanistrului" target="_blank" class="fb">Facebook</a>
-  <a href="https://www.tiktok.com/@villa.laguna.nist" target="_blank" class="tt">TikTok</a>
-</div>
+  <div class="socials">
+    <a href="https://www.instagram.com/villalagunanistrului/" target="_blank" class="inst">Instagram</a>
+    <a href="https://www.facebook.com/villalagunanistrului" target="_blank" class="fb">Facebook</a>
+    <a href="https://www.tiktok.com/@villa.laguna.nist" target="_blank" class="tt">TikTok</a>
+  </div>
 </section>
 
 <style>
@@ -682,18 +677,21 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   max-width: 1000px;
-  margin: 0 auto 50px;
+  margin: 0 auto 40px;
 }
 
 .contact-item h3 {
+  color: #111;
   font-size: 20px;
   margin-bottom: 12px;
+  font-weight: 600;
 }
 
 .contact-item p {
+  color: #333;
   font-size: 16px;
   line-height: 1.6;
-  color: #444;
+  margin: 0;
 }
 
 .contact-button {
@@ -703,79 +701,27 @@
   border-radius: 999px;
   text-decoration: none;
   font-weight: 600;
-  background: #111;
+}
+
+.whatsapp {
+  background: #25d366;
   color: #fff;
-}
-
-.socials {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.social {
-  display: block;
-  padding: 15px;
-  border-radius: 12px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 600;
-}
-
-.facebook { background: #3b5998; }
-.instagram { background: #e1306c; }
-.whatsapp { background: #25d366; }
-.tiktok { background: #000000; }
-
-@media (max-width: 768px) {
-  .contacts-grid {
-    grid-template-columns: 1fr;
-  }
-}
-  .contact-item h3 {
-  color: #111;
-  font-weight: 600;
-}
-
-.contact-item p {
-  color: #333;
-}
-  .contact-link {
-  display: inline-block;
-  margin-top: 10px;
-  color: #111;
-  text-decoration: underline;
-  font-size: 15px;
-}
- .socials {
-  margin-top: 30px;
-  text-align: center;
-  font-size: 15px;
-}
-
-.socials a {
-  color: #555;
-  text-decoration: none;
-}
-
-.socials a:hover {
-  color: #000;
-} 
-  .location-note {
-  color: #666;
-  font-size: 14px;
-  margin-top: 6px;
-  margin-bottom: 12px;
 }
 
 .map-light {
   background: #f2f2f2;
   color: #111;
 }
+
+.location-note {
+  color: #666;
+  font-size: 14px;
+  margin-top: 6px !important;
+  margin-bottom: 12px !important;
+}
+
 .socials {
-  margin-top: 18px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   gap: 18px;
@@ -806,6 +752,23 @@
 .socials a:hover {
   background: #eaeaea;
 }
+
+@media (max-width: 768px) {
+  .contacts-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .contacts {
+    padding: 70px 16px;
+  }
+
+  .contacts-title {
+    font-size: 32px;
+    margin-bottom: 36px;
+  }
+}
+</style>
 </style>
 </body>
 </html>
