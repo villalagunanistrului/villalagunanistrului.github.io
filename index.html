@@ -657,9 +657,9 @@
   </div>
 
 <div class="socials">
-  <a href="https://www.instagram.com/villalagunanistrului/" target="_blank">Instagram</a> ·
-  <a href="https://www.facebook.com/villalagunanistrului" target="_blank">Facebook</a> ·
-  <a href="https://www.tiktok.com/@villa.laguna.nist" target="_blank">TikTok</a>
+  <a href="https://www.instagram.com/villalagunanistrului/" target="_blank" class="inst">Instagram</a>
+  <a href="https://www.facebook.com/villalagunanistrului" target="_blank" class="fb">Facebook</a>
+  <a href="https://www.tiktok.com/@villa.laguna.nist" target="_blank" class="tt">TikTok</a>
 </div>
 </section>
 
@@ -774,39 +774,37 @@
   background: #f2f2f2;
   color: #111;
 }
-  .socials {
-  margin-top: 30px;
-  text-align: center;
-  font-size: 15px;
+.socials {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
 }
 
 .socials a {
   text-decoration: none;
+  font-size: 15px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #f3f3f3;
   transition: 0.2s;
 }
 
-/* Instagram */
 .socials a.inst {
-  color: #d96c8c;
-}
-.socials a.inst:hover {
-  color: #e1306c;
+  color: #c45c83;
 }
 
-/* Facebook */
 .socials a.fb {
-  color: #6d84b4;
-}
-.socials a.fb:hover {
-  color: #3b5998;
+  color: #5c76a8;
 }
 
-/* TikTok */
 .socials a.tt {
-  color: #666;
+  color: #555;
 }
-.socials a.tt:hover {
-  color: #000;
+
+.socials a:hover {
+  background: #eaeaea;
 }
 </style>
 </body>
