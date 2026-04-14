@@ -289,7 +289,7 @@
     </div>
 
     <div class="occasion-card">
-      <img src="romantic.jpg" alt="Свидания">
+     <img src="romantic.jpg" alt="Свидания" class="big-photo"> 
       <h3>Романтические встречи</h3>
       <p>Для свиданий и предложений руки и сердца</p>
     </div>
@@ -402,6 +402,13 @@
     height: 240px;
   }
 }
+  .big-photo {
+  height: auto !important;
+  max-height: 400px;
+  object-fit: contain !important;
+  background: transparent;
+}
+
 </style>
 </body>
 </html>
