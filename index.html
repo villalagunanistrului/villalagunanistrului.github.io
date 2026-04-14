@@ -409,5 +409,212 @@
 }
 
 </style>
+  <section class="formats">
+  <h2 class="formats-title">Выберите формат отдыха</h2>
+  <p class="formats-subtitle">Две отдельные зоны на одной приватной территории</p>
+
+  <p class="formats-common">
+    На всей территории доступны подогреваемый бассейн, джакузи, шезлонги, качели, батут, а также современная душевая и санузел
+  </p>
+
+  <div class="formats-grid">
+
+    <div class="format-card">
+      <img src="besedka.jpg" alt="Беседка">
+      <h3>Беседка (до 6 гостей)</h3>
+      <div class="format-note">возможность до 8 гостей с доплатой</div>
+
+      <div class="format-price">пн–чт — 2500 MDL</div>
+      <div class="format-price weekend">пт–вс — 3000 MDL</div>
+
+      <p class="format-text">
+        Уютная беседка с мангалом и всем необходимым для комфортного отдыха
+      </p>
+
+      <a
+        class="format-button"
+        href="https://wa.me/37379707595?text=Здравствуйте,%20хочу%20забронировать%20беседку"
+        target="_blank"
+      >
+        Забронировать беседку
+      </a>
+    </div>
+
+    <div class="format-card">
+      <img src="terrace.jpg" alt="Терраса">
+      <h3>Терраса (до 12 гостей)</h3>
+      <div class="format-note">возможность до 16 гостей с доплатой</div>
+
+      <div class="format-price">пн–чт — 4000 MDL</div>
+      <div class="format-price weekend">пт–вс — 5000 MDL</div>
+
+      <p class="format-text">
+        Просторная терраса с полноценной кухней и мягкой зоной отдыха
+      </p>
+
+      <a
+        class="format-button"
+        href="https://wa.me/37379707595?text=Здравствуйте,%20хочу%20забронировать%20террасу"
+        target="_blank"
+      >
+        Забронировать террасу
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<style>
+.formats {
+  padding: 90px 20px;
+  background: #f9f7f4;
+  color: #111;
+  text-align: center;
+}
+
+.formats-title {
+  font-size: 38px;
+  margin-bottom: 12px;
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 1px;
+}
+
+.formats-subtitle {
+  font-size: 18px;
+  color: #555;
+  margin: 0 auto 24px;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+.formats-common {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.formats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.format-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 18px 18px 28px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.format-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 22px;
+}
+
+.format-card h3 {
+  font-size: 28px;
+  margin: 0 0 10px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+}
+
+.format-note {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 22px;
+}
+
+.format-price {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.format-price.weekend {
+  margin-bottom: 22px;
+}
+
+.format-text {
+  max-width: 420px;
+  margin: 0 auto 26px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.format-button {
+  display: inline-block;
+  padding: 15px 28px;
+  border-radius: 999px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.format-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+  .formats {
+    padding: 70px 16px;
+  }
+
+  .formats-title {
+    font-size: 32px;
+  }
+
+  .formats-subtitle {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+
+  .formats-common {
+    font-size: 15px;
+    margin-bottom: 36px;
+  }
+
+  .formats-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .format-card {
+    padding: 16px 16px 24px;
+  }
+
+  .format-card img {
+    height: 260px;
+  }
+
+  .format-card h3 {
+    font-size: 24px;
+  }
+
+  .format-price {
+    font-size: 20px;
+  }
+
+  .format-text {
+    font-size: 15px;
+  }
+
+  .format-button {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+</style>
 </body>
 </html>
