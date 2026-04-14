@@ -616,5 +616,136 @@
   }
 }
 </style>
+  <section class="contacts">
+  <h2 class="contacts-title">Связаться с нами и забронировать</h2>
+
+  <div class="contacts-grid">
+
+    <div class="contact-item">
+      <h3>Время аренды</h3>
+      <p>ежедневно<br>с 10:00 до 22:00</p>
+    </div>
+
+    <div class="contact-item">
+      <h3>Связь</h3>
+      <p>
+        +373 79707595<br>
+        +373 79176176
+      </p>
+      <a 
+        href="https://wa.me/37379707595?text=Здравствуйте,%20хочу%20забронировать"
+        target="_blank"
+        class="contact-button whatsapp"
+      >
+        Написать в WhatsApp
+      </a>
+    </div>
+
+    <div class="contact-item">
+      <h3>Локация</h3>
+      <p>Вадул-луй-Водэ, у Днестра</p>
+      <a 
+        href="https://www.google.com/maps/place/Villa+Laguna+Nistrului"
+        target="_blank"
+        class="contact-button map"
+      >
+        Построить маршрут
+      </a>
+    </div>
+
+  </div>
+
+  <div class="socials">
+
+    <a href="https://www.facebook.com/villalagunanistrului" target="_blank" class="social facebook">
+      Facebook
+    </a>
+
+    <a href="https://www.instagram.com/villalagunanistrului/" target="_blank" class="social instagram">
+      Instagram
+    </a>
+
+    <a href="https://wa.me/37379707595" target="_blank" class="social whatsapp">
+      WhatsApp
+    </a>
+
+    <a href="https://www.tiktok.com/@villa.laguna.nist" target="_blank" class="social tiktok">
+      TikTok
+    </a>
+
+  </div>
+</section>
+
+<style>
+.contacts {
+  padding: 90px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.contacts-title {
+  font-size: 36px;
+  margin-bottom: 50px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.contacts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto 50px;
+}
+
+.contact-item h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.contact-item p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.contact-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  background: #111;
+  color: #fff;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.social {
+  display: block;
+  padding: 15px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.facebook { background: #3b5998; }
+.instagram { background: #e1306c; }
+.whatsapp { background: #25d366; }
+.tiktok { background: #000000; }
+
+@media (max-width: 768px) {
+  .contacts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 </body>
 </html>
