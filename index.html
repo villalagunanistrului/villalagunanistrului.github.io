@@ -643,23 +643,22 @@
 
     <div class="contact-item">
       <h3>Локация</h3>
-      <p>Вадул-луй-Водэ, у Днестра</p>
-  <a 
+<p>Вадул-луй-Водэ, у Днестра</p>
+<p class="location-note">Точная локация указана на карте</p>
+<a 
   href="https://maps.app.goo.gl/kBX97hZanu1ghkSg7"
   target="_blank"
-  class="contact-link"
+  class="contact-button map-light"
 >
-  Открыть карту
+  Построить маршрут
 </a>
     </div>
 
   </div>
 
 <div class="socials">
-  <a href="https://www.instagram.com/villalagunanistrului/" target="_blank">Instagram</a>
-  ·
-  <a href="https://www.facebook.com/villalagunanistrului" target="_blank">Facebook</a>
-  ·
+  <a href="https://www.instagram.com/villalagunanistrului/" target="_blank">Instagram</a> ·
+  <a href="https://www.facebook.com/villalagunanistrului" target="_blank">Facebook</a> ·
   <a href="https://www.tiktok.com/@villa.laguna.nist" target="_blank">TikTok</a>
 </div>
 </section>
@@ -764,6 +763,51 @@
 .socials a:hover {
   color: #000;
 } 
+  .location-note {
+  color: #666;
+  font-size: 14px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+.map-light {
+  background: #f2f2f2;
+  color: #111;
+}
+  .socials {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.socials a {
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+/* Instagram */
+.socials a.inst {
+  color: #d96c8c;
+}
+.socials a.inst:hover {
+  color: #e1306c;
+}
+
+/* Facebook */
+.socials a.fb {
+  color: #6d84b4;
+}
+.socials a.fb:hover {
+  color: #3b5998;
+}
+
+/* TikTok */
+.socials a.tt {
+  color: #666;
+}
+.socials a.tt:hover {
+  color: #000;
+}
 </style>
 </body>
 </html>
