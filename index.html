@@ -141,7 +141,7 @@
   </style>
 </head>
 <body>
-  <section class="hero">
+  <section id="home" class="hero">
     <div class="hero-content">
       <div class="subtitle">Приватный отдых с подогреваемым бассейном у Днестра</div>
 
@@ -164,7 +164,7 @@
       </div>
     </div>
   </section>
-  <section class="features">
+  <section id="conditions" class="features">
   <h2 class="features-title">Всё, что нужно для отдыха</h2>
 
   <div class="features-grid">
@@ -274,7 +274,7 @@
   }
 }
 </style>
-  <section class="occasions">
+  <section id="for-whom" class="occasions">
   <h2 class="occasions-title">Идеально для разных поводов</h2>
   <p class="occasions-subtitle">
     Приватная локация с бассейном — всё пространство только для Вас
@@ -409,7 +409,7 @@
 }
 
 </style>
-  <section class="formats">
+  <section id="prices" class="formats">
   <h2 class="formats-title">Выберите формат отдыха</h2>
   <p class="formats-subtitle">Две отдельные зоны на одной приватной территории</p>
 
@@ -813,7 +813,7 @@
   💬 Написать
 </a>
 
-<section class="gallery">
+<section id="gallery" class="gallery">
   <h2 class="gallery-title">Атмосфера Villa Laguna Nistrului</h2>
 
   <div class="gallery-grid">
@@ -831,7 +831,7 @@
   </div>
 </section>
 
-<section class="reviews">
+<section id="reviews" class="reviews">
   <h2 class="reviews-title">Нас выбирают и возвращаются снова</h2>
 
   <div class="reviews-wrapper">
@@ -998,7 +998,7 @@
     <button class="reviews-btn next">&#10095;</button>
   </div>
 </section>
-  <section class="contacts">
+  <section id="contacts" class="contacts">
   <h2 class="contacts-title">Связаться с нами и забронировать</h2>
 
   <div class="contacts-grid">
@@ -1247,6 +1247,106 @@
 @media(max-width:768px){
   .reviews-btn { display:none; }
 }
+  html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 86px;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+}
+
+.site-header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.site-logo {
+  text-decoration: none;
+  color: #111;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: #222;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.site-nav a:hover {
+  color: #8a6a45;
+}
+
+@media (max-width: 900px) {
+  .site-header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px 16px;
+    gap: 12px;
+  }
+
+  .site-logo {
+    font-size: 26px;
+  }
+
+  .site-nav {
+    gap: 14px;
+  }
+
+  .site-nav a {
+    font-size: 14px;
+  }
+
+  body {
+    padding-top: 118px;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-logo {
+    font-size: 24px;
+  }
+
+  .site-nav {
+    gap: 10px 14px;
+  }
+
+  .site-nav a {
+    font-size: 13px;
+  }
+
+  body {
+    padding-top: 126px;
+  }
+}
 </style>
   <div id="lightbox" class="lightbox">
   <span class="lightbox-close">&times;</span>
@@ -1317,4 +1417,19 @@ setInterval(() => {
 }, 30);
 </script>
 </body>
+  <header class="site-header">
+  <div class="site-header-inner">
+    <a href="#home" class="site-logo">Villa Laguna Nistrului</a>
+
+    <nav class="site-nav">
+      <a href="#home">Главная</a>
+      <a href="#conditions">Условия</a>
+      <a href="#for-whom">Для кого</a>
+      <a href="#prices">Цены</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </div>
+</header>
 </html>
