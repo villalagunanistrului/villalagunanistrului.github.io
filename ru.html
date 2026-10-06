@@ -369,6 +369,55 @@
     height: 280px;
   }
 }
+ .season-choice {
+  padding: 60px 20px;
+  text-align: center;
+  background: #faf8f5;
+}
+
+.season-choice h2 {
+  font-family: Georgia, serif;
+  font-size: 38px;
+  margin-bottom: 35px;
+}
+
+.season-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.season-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  padding: 30px;
+  border-radius: 18px;
+  background: #ffffff;
+  text-decoration: none;
+  color: #111;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.season-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.12);
+}
+
+.season-card h3 {
+  font-size: 30px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .season-cards {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
   <section id="for-whom" class="occasions">
   <h2 class="occasions-title">Идеально для разных поводов</h2>
