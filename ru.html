@@ -247,11 +247,11 @@
 
   <div class="season-cards">
     <a href="winter.html" class="season-card winter-card">
-      <h3>Зимний отдых</h3>
+      <h3>Зимний отдых →</h3>
     </a>
 
     <a href="summer.html" class="season-card summer-card">
-      <h3>Летний отдых</h3>
+      <h3>Летний отдых →</h3>
     </a>
   </div>
 </section>
@@ -389,7 +389,8 @@
 }
 
 .season-card {
-  display: flex;
+  position: relative;
+   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 220px;
@@ -409,8 +410,13 @@ background-position: center;
 }
 
 .season-card h3 {
-  font-size: 30px;
+  position: absolute;
+  left: 24px;
+  bottom: 20px;
   margin: 0;
+  font-size: 28px;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 .winter-card {
   background-image: url('winter.jpg');
