@@ -241,17 +241,16 @@
   Летом доступны открытый подогреваемый бассейн, беседка, терраса и джакузи, а в холодный сезон — крытая терраса и тёплый бассейн. Сауна и мангал доступны круглый год.
   Это приватная локация для дневного отдыха, дней рождения, семейных встреч, отдыха с друзьями и небольших мероприятий. Идеальный вариант для тех, кто ищет бассейн, сауну, террасу или беседку для отдыха рядом с Кишинёвом.
 </p>
-  </p>
-</section>
+  </section>
    <section class="season-choice">
   <h2>Условия отдыха</h2>
 
   <div class="season-cards">
-    <a href="winter.html" class="season-card">
+    <a href="winter.html" class="season-card winter-card">
       <h3>Зимний отдых</h3>
     </a>
 
-    <a href="summer.html" class="season-card">
+    <a href="summer.html" class="season-card summer-card">
       <h3>Летний отдых</h3>
     </a>
   </div>
@@ -401,8 +400,9 @@
   color: #111;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+   background-size: cover;
+background-position: center;
 }
-
 .season-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 14px 35px rgba(0,0,0,0.12);
@@ -412,7 +412,13 @@
   font-size: 30px;
   margin: 0;
 }
+.winter-card {
+  background-image: url('winter.jpg');
+}
 
+.summer-card {
+  background-image: url('summer.jpg');
+}
 @media (max-width: 768px) {
   .season-cards {
     grid-template-columns: 1fr;
