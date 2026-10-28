@@ -192,6 +192,7 @@
 
     <nav class="site-nav">
       <a href="#home">Acasă</a>
+      <a href="#conditions">Sezoane</a>
       
       <a href="#for-whom">Pentru cine</a>
       
@@ -215,7 +216,7 @@
       <h1 class="title">Villa Laguna Nistrului</h1>
 
       <div class="description">
-       Alegeți formatul de odihnă de vară sau de iarnă la Nistru, în Vadul lui Vodă, aproape de Chișinău. 
+       Alegeți formatul de odihnă de vară sau de iarnă în Vadul lui Vodă, aproape de Chișinău. 
       </div>
 
       <div class="button-wrap">
@@ -234,8 +235,8 @@
    <section class="seo-text">
   <p>
     Villa Laguna Nistrului oferă spații pentru odihnă pe tot parcursul anului, pe malul Nistrului, în Vadul lui Vodă, aproape de Chișinău.
-    Vara sunt disponibile piscina exterioară încălzită, foișorul, terasa și jacuzzi-ul, iar în sezonul rece — terasa închisă și piscina încălzită. Sauna și grătarul sunt disponibile pe tot parcursul anului.
-    Este un loc pentru odihnă de zi, aniversări, întâlniri de familie, timp petrecut cu prietenii și evenimente mici.
+    Vara sunt disponibile piscina exterioară încălzită, foișorul, terasa și jacuzzi-ul, iar în sezonul rece — terasa acoperită și piscina interioară încălzită. Sauna și grătarul sunt disponibile pe tot parcursul anului.
+    Este un loc potrivit pentru odihnă de zi, aniversări, întâlniri de familie, timp petrecut cu prietenii și evenimente mici.
   </p>
   <p class="museum-note">
     Pe teritoriul Villa Laguna Nistrului se află singurul muzeu de ascuțitori din Moldova.
@@ -328,7 +329,24 @@
   margin-top: 10px !important;
 }  
 </style>
-  <section id="for-whom" class="occasions">
+  <style>
+.season-choice { padding: 60px 20px; text-align: center; background: #faf8f5; }
+.season-choice h2 { font-family: Georgia, serif; font-size: 38px; margin-bottom: 35px; }
+.season-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; max-width: 1000px; margin: 0 auto; }
+.season-card { position: relative; display: flex; align-items: center; justify-content: center; min-height: 220px; padding: 30px; border-radius: 18px; background: #fff; text-decoration: none; color: #111; box-shadow: 0 10px 30px rgba(0,0,0,.08); background-size: cover; background-position: center; }
+.season-card h3 { position: absolute; left: 24px; bottom: 20px; margin: 0; font-size: 28px; color: #fff; text-shadow: 0 2px 10px rgba(0,0,0,.85); }
+.winter-card { background-image: url('winter.jpg'); }
+.summer-card { background-image: url('summer.jpg'); }
+@media (max-width: 768px) { .season-cards { grid-template-columns: 1fr; } }
+</style>
+<section id="conditions" class="season-choice">
+  <h2>Alegeți sezonul</h2>
+  <div class="season-cards">
+    <a href="iarna.html" class="season-card winter-card"><h3>Odihnă de iarnă →</h3></a>
+    <a href="vara.html" class="season-card summer-card"><h3>Odihnă de vară →</h3></a>
+  </div>
+</section>
+<section id="for-whom" class="occasions">
   <h2 class="occasions-title">Perfect pentru diferite ocazii</h2>
   <p class="occasions-subtitle">
    Locație privată cu piscină încălzită în Vadul lui Vodă, aproape de Chișinău — tot spațiul doar pentru tine
