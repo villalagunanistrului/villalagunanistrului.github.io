@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <url>
-    <loc>https://villalagunanistrului.md/</loc>
-    <lastmod>2026-05-05</lastmod>
-    <priority>1.0</priority>
-  </url>
-
-  <url>
-    <loc>https://villalagunanistrului.md/ru.html</loc>
-    <lastmod>2026-05-05</lastmod>
-    <priority>0.9</priority>
-  </url>
-
+  <url><loc>https://villalagunanistrului.md/</loc><lastmod>2026-10-30</lastmod></url>
+  <url><loc>https://villalagunanistrului.md/ru.html</loc><lastmod>2026-10-30</lastmod></url>
+  <url><loc>https://villalagunanistrului.md/iarna.html</loc><lastmod>2026-10-30</lastmod></url>
+  <url><loc>https://villalagunanistrului.md/winter.html</loc><lastmod>2026-10-30</lastmod></url>
+  <url><loc>https://villalagunanistrului.md/vara.html</loc><lastmod>2026-10-30</lastmod></url>
+  <url><loc>https://villalagunanistrului.md/summer.html</loc><lastmod>2026-10-30</lastmod></url>
 </urlset>
